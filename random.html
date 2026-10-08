@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lấy Số Ngẫu Nhiên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; background: #f0f2f5; }
+        button { padding: 15px 30px; font-size: 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 8px; }
+        #result { font-size: 80px; font-weight: bold; margin-top: 20px; color: #333; }
+    </style>
+</head>
+<body>
+    <button onclick="generateRandom()">CLICK ĐỂ LẤY SỐ</button>
+    <div id="result">--</div>
+
+    <script>
+        function generateRandom() {
+            // Lấy số ngẫu nhiên từ 1 đến 1000
+            const randomNum = Math.floor(Math.random() * 1000) + 1;
+            document.getElementById("result").innerText = randomNum;
+        }
+    </script>
+</body>
+</html>
